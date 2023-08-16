@@ -1,0 +1,40 @@
+.mainAddress {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+  align-items: center;
+  display: none;
+}
+
+.address {
+  display: flex;
+  justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .mainAddress {
+    display: block;
+    width: 480px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .container img {
+    margin: 10px 10px 10px;
+  }
+
+  .address {
+    padding: 10px 0px 5px 0px;
+  }
+  .address p {
+    font-size: 14px;
+  }
+  .address h2 {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+}

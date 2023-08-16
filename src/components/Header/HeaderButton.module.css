@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #ff9900;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.adaptiv {
+  display: none;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 16px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #ff8800;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.badge {
+  background-color: #c71212;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #f80324;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@media (max-width: 1200px) {
+  .button {
+    border-radius: 25px;
+  }
+  .adaptiv {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .button {
+    position: relative;
+    padding: 5px;
+    margin-top: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0;
+  }
+  .badge {
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    bottom: 0px;
+    background-color: #c71212;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0;
+  }
+  .spanAdaptiv {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .button {
+    position: relative;
+    padding: 5px;
+    margin-top: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0;
+  }
+  .badge {
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    bottom: 0px;
+    background-color: #c71212;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0;
+  }
+  .spanAdaptiv {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .button {
+    position: relative;
+    padding: 5px;
+    margin-top: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0;
+  }
+  .badge {
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    bottom: 0px;
+    background-color: #c71212;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 0;
+  }
+  .spanAdaptiv {
+    display: none;
+  }
+}

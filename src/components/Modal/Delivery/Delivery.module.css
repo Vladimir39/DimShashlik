@@ -1,0 +1,69 @@
+.checkboxAdress {
+  border: 1px solid #ff9900;
+  margin-top: 20px;
+  padding: 10px;
+}
+.checkbox {
+  margin: 20px 0px 20px 0px;
+}
+
+.back {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back img {
+  width: 30px;
+  height: 30px;
+}
+
+.back p {
+  justify-content: left;
+  margin: 7px 0 0 5px;
+}
+
+.back p:hover {
+  color: #ff9900;
+}
+
+.inputAdress label {
+  display: block;
+}
+
+.inputAdress input {
+  margin: 10px 0;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.TitleDelivery {
+  margin: 10px 0;
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-auto-rows: 30px;
+  grid-gap: 0.5rem;
+}
+
+.buttonTimes {
+  background-color: #ffffff;
+  border: 1px dashed #ff9900;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.buttonTimes:hover {
+  background-color: #ff9900;
+}
+
+.active {
+  background-color: #ff9900;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

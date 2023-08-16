@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #fdf5e3;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 2px;
+}
+
+button {
+  border: none;
+  outline: none;
+}

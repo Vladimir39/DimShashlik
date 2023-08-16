@@ -1,0 +1,104 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.drawer {
+  position: absolute;
+  width: 450px;
+  height: 100%;
+  right: 0;
+  background: #fdf5e3;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.br {
+  margin-top: 10px;
+  border: 1px solid rgb(204, 116, 116);
+}
+
+.title h2 {
+  display: block;
+  margin: 0;
+}
+
+.title img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.CartTotalBlock {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}
+
+.CartTotalBlock ul {
+  margin-bottom: 30px;
+}
+
+.CartTotalBlock li {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fdf5e3;
+}
+
+.CartTotalBlock div {
+  flex: 1;
+  height: 1px;
+  border-bottom: 1px dashed #dfdfdf;
+  position: relative;
+  top: -4px;
+  margin: 0 7px;
+}
+
+.CartTotalBlock button {
+  width: 100%;
+  height: 44px;
+  background-color: #ff9900;
+  border-radius: 18px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.CartTotalBlock button:hover {
+  background-color: #ff9900c7;
+}
+
+.CartTotalBlock button:active {
+  background-color: #ff990085;
+}
+
+.item {
+  padding-top: 10%;
+  height: 80%;
+  overflow: auto;
+}
+
+.basketZero img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+.basketZero h3 {
+  margin: 0;
+  text-align: center;
+}

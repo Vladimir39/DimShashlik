@@ -1,0 +1,65 @@
+.form {
+  text-align: center;
+}
+
+.button {
+  align-items: center;
+}
+
+.form button {
+  margin-top: 20px;
+  font: inherit;
+  cursor: pointer;
+  background-color: #ff9900;
+  border: 1px solid #ff9900;
+  color: black;
+  padding: 0.25rem 4rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #ff9900c0;
+  border-color: black;
+  color: black;
+}
+
+.input {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid #ff9900;
+  width: 130px;
+  padding: 4px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.quantityButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  cursor: pointer;
+  background-color: #ff9900;
+  border-radius: 100px;
+}
+
+.newInput {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .form button {
+    margin-top: 20px;
+    color: black;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+}

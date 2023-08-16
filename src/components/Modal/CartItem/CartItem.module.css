@@ -1,0 +1,91 @@
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.itemClear img {
+  height: 30px;
+  width: 30px;
+}
+
+.itemImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.title {
+  width: 130px;
+}
+.title h2 {
+  width: 170px;
+  font-size: 16px;
+}
+
+.itemPrice {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price {
+  margin-right: 30px;
+}
+
+/* Изменить шрифт .................................................................*/
+.price p {
+  font-size: 16px;
+}
+
+.input {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid #ff9900;
+  width: 130px;
+  padding: 4px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.newInput {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.quantityButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  cursor: pointer;
+  background-color: #ff9900;
+  border-radius: 100px;
+}
+
+.quantityButton p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.clear:hover {
+  background-color: #fdf5e171;
+  border-radius: 50%;
+}
