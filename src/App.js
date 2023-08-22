@@ -5,6 +5,8 @@ import Content from "./components/Content/Content";
 import { useSelector } from "react-redux";
 import Modal from "./components/Modal/Modal";
 import Address from "./components/address/address";
+import Footer from "./components/Footer/Footer";
+import BlockIMG from "./components/BlockIMG/BlockIMG";
 
 function App() {
   const NAV_MENU = [
@@ -42,6 +44,8 @@ function App() {
       <Address />
       <Content navigation={NAV_MENU} item={items} isLoading={isLoading} />
       {cartIsVisible && <Modal close={() => setCartIsVisible(false)} />}
+      <BlockIMG />
+      <Footer />
     </>
   );
 }

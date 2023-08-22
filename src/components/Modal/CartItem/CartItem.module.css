@@ -89,3 +89,9 @@
   background-color: #fdf5e171;
   border-radius: 50%;
 }
+
+@media (max-width: 480px) {
+  .description {
+    margin-left: 10px;
+  }
+}

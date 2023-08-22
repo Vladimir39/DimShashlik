@@ -4,7 +4,7 @@
   cursor: pointer;
   font: inherit;
   border: none;
-  background-color: #ff9900;
+  background-color: #891c21;
   color: white;
   padding: 0.5rem 1rem;
   display: flex;
@@ -28,7 +28,7 @@ span {
 
 .button:hover,
 .button:active {
-  background-color: #ff8800;
+  background-color: #891c2177;
 }
 
 .icon {
@@ -127,8 +127,8 @@ span {
     position: relative;
     padding: 5px;
     margin-top: 40px;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 50px;
   }
   .icon {

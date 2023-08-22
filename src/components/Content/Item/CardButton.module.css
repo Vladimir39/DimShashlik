@@ -10,9 +10,9 @@
   margin-top: 20px;
   font: inherit;
   cursor: pointer;
-  background-color: #ff9900;
-  border: 1px solid #ff9900;
-  color: black;
+  background-color: #891c21;
+  border: 1px solid #891c21;
+  color: white;
   padding: 0.25rem 4rem;
   border-radius: 20px;
   font-weight: bold;
@@ -20,9 +20,9 @@
 
 .form button:hover,
 .form button:active {
-  background-color: #ff9900c0;
-  border-color: black;
-  color: black;
+  background-color: #891c21c0;
+  border-color: white;
+  color: white;
 }
 
 .input {
@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  border: 1px solid #ff9900;
+  border: 1px solid #891c21;
   width: 130px;
   padding: 4px;
   height: 40px;
@@ -42,7 +42,7 @@
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.219);
   cursor: pointer;
-  background-color: #ff9900;
+  background-color: #891c21;
   border-radius: 100px;
 }
 

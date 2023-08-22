@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./address.module.css";
-import telefon from "../../img/telefon.svg";
+import telefon from "../../img/telefonV2.svg";
 
 function Address() {
   return (
@@ -9,7 +9,7 @@ function Address() {
         <div>
           <img src={telefon} alt="Телефон" />
         </div>
-        <div>
+        <div className={styles.addressBlock}>
           <div className={styles.address}>
             <div>
               <h2>+79659898988</h2>
