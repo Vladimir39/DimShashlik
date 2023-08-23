@@ -1,33 +1,40 @@
 .blockIMG {
   margin: 0 auto;
-  width: 100%; /* Устанавливаем ширину блока */
+  width: auto; /* Устанавливаем ширину блока */
   height: 400px; /* Устанавливаем высоту блока */
-  overflow: hidden; /* Обрезаем содержимое, которое выходит за границы блока */
+  overflow: hidden;
+  display: flex; /* Обрезаем содержимое, которое выходит за границы блока */
+justify-content: center;
+align-items: center;
 }
 
 .blockIMG img {
   width: 100%; /* Ширина картинки равна 100% ширины родительского блока */
-  height: auto; /* Автоматически высчитываем высоту, чтобы сохранить соотношение сторон */
+  height: 400px; /* Автоматически высчитываем высоту, чтобы сохранить соотношение сторон */
   object-fit: none; /* Картинка не изменяет своего расширения */
 }
 
 @media (max-width: 1200px) {
   .blockIMG {
-    width: 1000px;
+    width: 100%;
+    height: 290px;
   }
 }
 
 @media (max-width: 1000px) {
   .blockIMG {
-    width: 768px;
+    width: 100%;
+    height: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .blockIMG {
-    width: 480px;
+    width: 100%;
+    height: 150px;
   }
   .blockIMG img {
-    width: 100%; /* Ширина картинки равна 100% ширины родительского блока */
+    width: 100%;
+    margin: -150px 0 0 0px; /* Ширина картинки равна 100% ширины родительского блока */
   }
 }

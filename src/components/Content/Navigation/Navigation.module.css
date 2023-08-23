@@ -3,6 +3,7 @@
 .navigastion {
   padding: 25px;
   height: 80px;
+  width: 100%;
 }
 
 li {
@@ -38,6 +39,9 @@ li {
   }
 }
 @media (max-width: 1000px) {
+  .navigastion {
+    margin-bottom: 50px;
+  }
   .navigastion ul {
     padding: 10px;
     display: grid;
@@ -46,12 +50,21 @@ li {
   }
 }
 @media (max-width: 768px) {
+  .navigastion {
+    margin-bottom: 50px;
+  }
   .navigastion ul {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    
   }
 }
 @media (max-width: 480px) {
+  .navigastion {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }
