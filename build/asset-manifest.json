@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.efd43dae.chunk.css",
-    "main.js": "/static/js/main.d7561474.chunk.js",
-    "main.js.map": "/static/js/main.d7561474.chunk.js.map",
+    "main.css": "/static/css/main.cc1dcb45.chunk.css",
+    "main.js": "/static/js/main.e126cc3f.chunk.js",
+    "main.js.map": "/static/js/main.e126cc3f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d935bac7.js",
     "runtime-main.js.map": "/static/js/runtime-main.d935bac7.js.map",
-    "static/js/2.c89e62d2.chunk.js": "/static/js/2.c89e62d2.chunk.js",
-    "static/js/2.c89e62d2.chunk.js.map": "/static/js/2.c89e62d2.chunk.js.map",
+    "static/js/2.9dea75a1.chunk.js": "/static/js/2.9dea75a1.chunk.js",
+    "static/js/2.9dea75a1.chunk.js.map": "/static/js/2.9dea75a1.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.efd43dae.chunk.css.map": "/static/css/main.efd43dae.chunk.css.map",
-    "static/js/2.c89e62d2.chunk.js.LICENSE.txt": "/static/js/2.c89e62d2.chunk.js.LICENSE.txt",
-    "static/media/Arrow_v3.169274cf.png": "/static/media/Arrow_v3.169274cf.png",
+    "static/css/main.cc1dcb45.chunk.css.map": "/static/css/main.cc1dcb45.chunk.css.map",
+    "static/js/2.9dea75a1.chunk.js.LICENSE.txt": "/static/js/2.9dea75a1.chunk.js.LICENSE.txt",
+    "static/media/Back.24c37844.svg": "/static/media/Back.24c37844.svg",
     "static/media/BasketZero.41108a47.png": "/static/media/BasketZero.41108a47.png",
-    "static/media/clear.8fdddab8.png": "/static/media/clear.8fdddab8.png",
-    "static/media/error.cfa7544a.jpg": "/static/media/error.cfa7544a.jpg",
-    "static/media/logoNew.f8870d14.png": "/static/media/logoNew.f8870d14.png",
-    "static/media/telefon.50e9af78.svg": "/static/media/telefon.50e9af78.svg"
+    "static/media/ClearTop.d7d66a49.svg": "/static/media/ClearTop.d7d66a49.svg",
+    "static/media/INST.2875446a.svg": "/static/media/INST.2875446a.svg",
+    "static/media/NatureNew.c3e62c00.svg": "/static/media/NatureNew.c3e62c00.svg",
+    "static/media/VK.a4d29f9a.svg": "/static/media/VK.a4d29f9a.svg",
+    "static/media/ItemCard.module.css": "/static/media/carOboiNew.58104642.svg",
+    "static/media/clear.b7493bcd.svg": "/static/media/clear.b7493bcd.svg",
+    "static/media/logoNewV3.8923996a.png": "/static/media/logoNewV3.8923996a.png",
+    "static/media/telefonV2.19ab94c1.svg": "/static/media/telefonV2.19ab94c1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d935bac7.js",
-    "static/js/2.c89e62d2.chunk.js",
-    "static/css/main.efd43dae.chunk.css",
-    "static/js/main.d7561474.chunk.js"
+    "static/js/2.9dea75a1.chunk.js",
+    "static/css/main.cc1dcb45.chunk.css",
+    "static/js/main.e126cc3f.chunk.js"
   ]
 }

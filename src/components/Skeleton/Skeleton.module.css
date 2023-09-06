@@ -1,9 +1,11 @@
-
+.contentLoaderRect {
+  background-color: #666666;
+}
 
 @media (max-width: 480px) {
-    .contentLoader {
-        width: 100%;
-        height: 100%;
-        margin-left: 10px;
-    }
+  .contentLoader {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
   }
+}

@@ -2,16 +2,27 @@
   box-sizing: border-box;
 }
 
+/* При открытии модального окна */
+
 html {
   font-family: sans-serif;
   background-color: #000;
 }
 
-body {
-}
-
 main {
   margin-top: 7rem;
+}
+
+body {
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0; /* Убираем скроллбар в Webkit браузерах (Chrome, Safari) */
+}
+
+/* При закрытии модального окна */
+body {
+  overflow: auto; /* Восстанавливаем прокрутку */
 }
 
 body,
@@ -31,4 +42,10 @@ main {
 button {
   border: none;
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Скрыть горизонтальный скролл на маленьких экранах */
+  }
 }

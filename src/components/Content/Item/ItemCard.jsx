@@ -12,10 +12,20 @@ function ItemCard(props) {
         </div>
       </div>
       <div className={styles.title}>
-        <h3>{props.name}</h3>
-        <p>{props.description}</p>
+        <h3 className={styles.h3}>{props.name}</h3>
+        <div className={styles.description}>
+          <div className={styles.descriptionP}>
+            <p className={styles.p}>{props.description}</p>
+          </div>
+          <div className={styles.descriptionSpan}>
+            <span>{props.weight}</span>
+          </div>
+        </div>
       </div>
-      <CardButton date={props} />
+
+      <div className={styles.button}>
+        <CardButton date={props} />
+      </div>
     </div>
   );
 }

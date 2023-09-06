@@ -1,12 +1,24 @@
+h2,
+p {
+  color: #fff;
+}
+
 .cartItem {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   width: 100%;
+  background: linear-gradient(180deg, #000 29.73%, #555 100%);
+  border-radius: 20px;
+  border: 1px solid #891c21;
 }
 
 .content {
   display: flex;
+}
+
+.itemClear {
+  padding: 5px;
 }
 
 .itemClear img {
@@ -14,13 +26,17 @@
   width: 30px;
 }
 
+.itemImg {
+  height: 90px;
+}
+
 .itemImg img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
+  height: 90px;
+  border-radius: 20px 0 0 20px;
 }
 
 .description {
+  padding: 5px 0px;
   margin-left: 20px;
 }
 
@@ -39,6 +55,8 @@
 }
 
 .price {
+  width: 60%;
+  padding-top: 10%;
   margin-right: 30px;
 }
 
@@ -52,7 +70,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  border: 1px solid #ff9900;
+  border: 1px solid #891c21;
   width: 130px;
   padding: 4px;
   height: 40px;
@@ -72,8 +90,12 @@
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.219);
   cursor: pointer;
-  background-color: #ff9900;
+  background-color: #891c21;
   border-radius: 100px;
+}
+
+.quantityButton:hover {
+  background-color: #891c21c0;
 }
 
 .quantityButton p {
@@ -93,5 +115,26 @@
 @media (max-width: 480px) {
   .description {
     margin-left: 10px;
+  }
+  .description {
+    width: 140px;
+  }
+  .input {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+  }
+  .newInput {
+    width: 15px;
+  }
+  .quantityButton {
+    width: 30px;
+    height: 30px;
+  }
+  .itemPrice {
+    width: 150px;
+  }
+  .price {
+    width: 15%;
   }
 }

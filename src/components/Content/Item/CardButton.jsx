@@ -50,7 +50,7 @@ function CardButton(props) {
   };
 
   const inputQuantity = isAmountValid ? (
-    <button onClick={addOrder}>Добавить</button>
+    <button onClick={addOrder}>В корзину</button>
   ) : (
     <div className={styles.inputContainer}>
       <div className={styles.input}>

@@ -1,6 +1,5 @@
 import React from "react";
-import error from "../../../img/error.jpg";
-import clear from "../../../img/clear.png";
+import clear from "../../../img/clear.svg";
 import styles from "./CartItem.module.css";
 import { useDispatch } from "react-redux";
 import {

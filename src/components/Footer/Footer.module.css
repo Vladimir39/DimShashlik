@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap");
+
 a {
   text-decoration: none;
   color: #fff;
@@ -12,39 +14,109 @@ a {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 20px 20px;
   margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .blockInfo {
+  width: 350px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 40px;
-  color: #fff;
-}
-
-.blockSocialMedia {
-  margin-right: 100px;
 }
 
 .blockInfo img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .blockInfo p {
+  margin-top: 20px;
+  color: #891c21;
+}
+
+.addressNet {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25%;
+  padding-right: 25%;
+  width: 350px;
+}
+.nameNet {
   margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.nameNet p {
+  text-align: center;
 }
 
 .blockImg {
-  margin-left: 40px;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockImg:hover {
+  border-color: #891c21;
+  box-shadow: 0px 0px 25px #891c21;
 }
 
 .address {
-  margin-right: 40px;
+  width: 450px;
+  height: 100%;
+  text-align: center;
 }
 
 .address p {
-  margin: 0;
   padding-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.blockInfoTwo {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 40px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  border: 3px solid #891c21;
+  border-radius: 10px;
+  background-color: #891c2163;
+}
+
+.blockInfoTwo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: #ffffff31;
+  transform: translateX(-4em) skewX(-45deg);
+  transition: 0.5s;
+}
+
+.blockInfoTwo:hover::before {
+  animation: move-light 0.7s;
+}
+
+@keyframes move-light {
+  from {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    transform: translateX(65em) skewX(-45deg);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -57,6 +129,10 @@ a {
   .footer {
     width: 100%;
   }
+  .blockInfoTwo {
+    width: 768px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -66,10 +142,14 @@ a {
   .address {
     text-align: center;
     width: 50%;
-    padding-left: 40px;
+  }
+  .blockInfoTwo {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-
+  .blockInfoTwo {
+    width: 100%;
+  }
 }

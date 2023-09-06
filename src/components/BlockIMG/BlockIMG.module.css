@@ -4,8 +4,8 @@
   height: 400px; /* Устанавливаем высоту блока */
   overflow: hidden;
   display: flex; /* Обрезаем содержимое, которое выходит за границы блока */
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .blockIMG img {
@@ -32,9 +32,11 @@ align-items: center;
   .blockIMG {
     width: 100%;
     height: 150px;
+    display: none;
   }
   .blockIMG img {
-    width: 100%;
-    margin: -150px 0 0 0px; /* Ширина картинки равна 100% ширины родительского блока */
+    /* Ширина картинки равна 100% ширины родительского блока */
+    display: none;
+    height: 5px;
   }
 }

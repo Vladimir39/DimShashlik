@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap");
 
 .navigastion {
   padding: 25px;
@@ -7,6 +7,7 @@
 }
 
 li {
+  position: relative;
   list-style-type: none;
   display: inline;
   margin-right: 10px;
@@ -14,9 +15,44 @@ li {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+  transform: scaleX(0);
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transition: 0.2s;
+  border-radius: 10px;
+  transform: scaleY(0);
+}
+
+li:hover::before,
+li:hover::after {
+  transform: scale(1);
+}
+
 .navigastion ul {
   display: flex;
   justify-content: space-between;
@@ -40,7 +76,7 @@ li {
 }
 @media (max-width: 1000px) {
   .navigastion {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .navigastion ul {
     padding: 10px;
@@ -50,15 +86,11 @@ li {
   }
 }
 @media (max-width: 768px) {
-  .navigastion {
-    margin-bottom: 50px;
-  }
   .navigastion ul {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    
   }
 }
 @media (max-width: 480px) {
@@ -66,5 +98,11 @@ li {
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .navigastion li {
+    font-size: 14px;
   }
 }

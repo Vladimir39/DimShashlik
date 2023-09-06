@@ -1,0 +1,551 @@
+[
+  {
+    "id": 0,
+    "category": "1",
+    "img": "images/menu_item/barbecue/ШЕЙКА_СВИНАЯ.webp",
+    "name": "Свиная шейка",
+    "description": "Сочный и ароматный шашлык из свиной шейки, приготовленный на углях с нежными специями",
+    "price": "410",
+    "weight": "шп"
+  },
+  {
+    "id": 1,
+    "category": "1",
+    "img": "images/menu_item/barbecue/МЯКОТЬ_БАРАНИНА.webp",
+    "name": "Мякоть баранина",
+    "description": "Изысканный шашлык из нежной мякоти баранины, приправленный ароматными специями и обжаренный на углях",
+    "price": "530",
+    "weight": "шп"
+  },
+  {
+    "id": 2,
+    "category": "1",
+    "img": "images/menu_item/barbecue/БЕДРО_КУРИНЫЕ.webp",
+    "name": "Куриное бедро",
+    "description": "Сочный шашлык с куриным бедром, приготовленный с травами и ароматными специями",
+    "price": "320",
+    "weight": "шп"
+  },
+  {
+    "id": 3,
+    "category": "1",
+    "img": "images/menu_item/barbecue/РЕБРА_СВИНИНА.webp",
+    "name": "Свиные ребра",
+    "description": "Пикантный шашлык из свиных рёбер с пряными приправами и аппетитной хрустящей коркой",
+    "price": "360",
+    "weight": "шп"
+  },
+  {
+    "id": 4,
+    "category": "1",
+    "img": "images/menu_item/barbecue/ФИЛЕ_ТЕЛЯТИНЫ.webp",
+    "name": "Филе телятины",
+    "description": "Нежный шашлык из филе телятины, приправленный уникальными специями для неповторимого вкуса",
+    "price": "530",
+    "weight": "шп"
+  },
+  {
+    "id": 5,
+    "category": "1",
+    "img": "images/menu_item/barbecue/КАРЕ_ЯГНЕНКА.webp",
+    "name": "Корейка ягненка",
+    "description": "Эксклюзивный шашлык из корейки ягненка с насыщенными восточными пряностями и аппетитной коркой",
+    "price": "550",
+    "weight": "шп"
+  },
+  {
+    "id": 6,
+    "category": "1",
+    "img": "images/menu_item/barbecue/РЕБРА_БАРАНИНА.webp",
+    "name": "Ребра баранина",
+    "description": "Ароматный шашлык из сочных рёбер баранины, пропитанный пряными специями и обжаренный на углях",
+    "price": "450",
+    "weight": "шп"
+  },
+  {
+    "id": 7,
+    "category": "1",
+    "img": "images/menu_item/barbecue/КУРИНЫЕ_КРЫЛЬЯ.webp",
+    "name": "Куриные крылья",
+    "description": "Сочные куриные крылья, обжаренные до золотистой хрустящей корки, с аппетитными приправами",
+    "price": "280",
+    "weight": "шп"
+  },
+  {
+    "id": 8,
+    "category": "1",
+    "img": "images/menu_item/barbecue/ФИЛЕ_КУРИНОЕ.webp",
+    "name": "Куриное филе",
+    "description": "Нежный шашлык из куриного филе с ароматными специями и золотистой коркой на углях",
+    "price": "340",
+    "weight": "шп"
+  },
+  {
+    "id": 9,
+    "category": "1",
+    "img": "images/menu_item/barbecue/КРЫЛЬЯ_БАРБЕКЮ.webp",
+    "name": "Крылья барбекю",
+    "description": "Крылья барбекю – сочные и ароматные, обжаренные до идеальной хрустящей корки с барбекю-соусом",
+    "price": "300",
+    "weight": "шп"
+  },
+  {
+    "id": 10,
+    "category": "1",
+    "img": "images/menu_item/barbecue/БЕДРО_ИНДЕЙКИ.webp",
+    "name": "Бедро индейки",
+    "description": "Нежное шашлык из индейки, приготовленное с травами и ароматными специями для непередаваемого вкуса",
+    "price": "530",
+    "weight": "шп"
+  },
+  {
+    "id": 11,
+    "category": "1",
+    "img": "images/menu_item/barbecue/БЕДРО_ИНДЕЙКИ1.webp",
+    "name": "Сердце индейки",
+    "description": "Утонченный шашлык из сердца индейки, пряно приправленный и приготовленный с искусством",
+    "price": "360",
+    "weight": "шп"
+  },
+  {
+    "id": 12,
+    "category": "2",
+    "img": "images/menu_item/shawarma/ШАУРМА_КУРИЦА.webp",
+    "name": "C курицей",
+    "description": "Аппетитная шаурма с нежным куриным мясом и ароматными специями в пышном лаваше",
+    "price": "180",
+    "weight": "шт"
+  },
+  {
+    "id": 13,
+    "category": "2",
+    "img": "images/menu_item/shawarma/ШАУРМА_СВИНИНА.webp",
+    "name": "Cо свининой",
+    "description": "Изысканная шаурма с ароматной свининой, специями и сочными овощами в лаваше",
+    "price": "230",
+    "weight": "шт"
+  },
+  {
+    "id": 14,
+    "category": "2",
+    "img": "images/menu_item/shawarma/ШАУРМА_СВИНИНА.webp",
+    "name": "C говядиной",
+    "description": "Шаурма с нежной говядиной, оригинальными специями и сочными овощами в лаваше",
+    "price": "300",
+    "weight": "шт"
+  },
+  {
+    "id": 15,
+    "category": "2",
+    "img": "images/menu_item/shawarma/ШАУРМА_СВИНИНА.webp",
+    "name": "C бараниной",
+    "description": "Ароматная шаурма с нежной бараниной, приправленная специями и укутанная в пышный лаваш",
+    "price": "300",
+    "weight": "шт"
+  },
+  {
+    "id": 16,
+    "category": "2",
+    "img": "images/menu_item/shawarma/ШАУРМА_КУРИЦА.webp",
+    "name": "C индейкой",
+    "description": "Шаурма с нежным мясом индейки, ароматными специями и свежими овощами в лаваше",
+    "price": "280",
+    "weight": "шт"
+  },
+  {
+    "id": 17,
+    "category": "3",
+    "img": "images/menu_item/lula_kebab/ГОВЯДИНА.webp",
+    "name": "Говядина",
+    "description": "Изысканный люля-кебаб с нежной говядиной и оригинальными специями, приготовленный с любовью",
+    "price": "290",
+    "weight": "шп"
+  },
+  {
+    "id": 18,
+    "category": "3",
+    "img": "images/menu_item/lula_kebab/БАРАНИНА.webp",
+    "name": "Баранина",
+    "description": "Ароматный люля-кебаб с нежной бараниной и пряными специями, приготовленный с искусством",
+    "price": "300",
+    "weight": "шп"
+  },
+  {
+    "id": 19,
+    "category": "3",
+    "img": "images/menu_item/lula_kebab/Люля_Курица.webp",
+    "name": "Из курицы",
+    "description": "Легкий и аппетитный люля-кебаб из нежного куриного мяса, обогащенный специями",
+    "price": "260",
+    "weight": "шп"
+  },
+  {
+    "id": 20,
+    "category": "3",
+    "img": "images/menu_item/lula_kebab/СВИНИНА.webp",
+    "name": "Свинина",
+    "description": "Сочный люля-кебаб с нежной свининой и ароматными специями для истинных гурманов",
+    "price": "280",
+    "weight": "шп"
+  },
+  {
+    "id": 21,
+    "category": "4",
+    "img": "images/menu_item/fish/ДОРАДО.webp",
+    "name": "Дорадо",
+    "description": "Дорадо на гриле – свежая рыба с идеальной хрустящей коркой и ароматом моря",
+    "price": "699",
+    "weight": "шт"
+  },
+  {
+    "id": 22,
+    "category": "4",
+    "img": "images/menu_item/fish/СИБАС.webp",
+    "name": "Сибас",
+    "description": "Сибас на гриле - изысканно приготовленная свежая рыба с ароматом моря и нежной текстурой",
+    "price": "699",
+    "weight": "шт"
+  },
+  {
+    "id": 23,
+    "category": "4",
+    "img": "images/menu_item/fish/СТЕЙК_СЕМГИ.webp",
+    "name": "Стейк семги",
+    "description": "Аппетитный стейк семги, приготовленный на гриле с нежной мякотью и интенсивным вкусом",
+    "price": "799",
+    "weight": "шт"
+  },
+  {
+    "id": 24,
+    "category": "4",
+    "img": "images/menu_item/fish/СИБАС.webp",
+    "name": "Форель",
+    "description": "Форель на гриле – свежая рыба с хрустящей коркой и нежным морским вкусом",
+    "price": "699",
+    "weight": "шт"
+  },
+  {
+    "id": 25,
+    "category": "5",
+    "img": "images/menu_item/garnish/ХАЧАПУРИ_НА_МАНГАЛЕ.webp",
+    "name": "Хачапури на мангале",
+    "description": "Интересное блюдо хачапури, готовящееся на мангале с сыром и ароматным тестом",
+    "price": "399",
+    "weight": "80г"
+  },
+  {
+    "id": 26,
+    "category": "5",
+    "img": "images/menu_item/garnish/ГРИБЫ.webp",
+    "name": "Грибы",
+    "description": "Шампиньоны на гриле – ароматные грибы с нежным вкусом и золотистой коркой",
+    "price": "190",
+    "weight": "80г"
+  },
+  {
+    "id": 27,
+    "category": "5",
+    "img": "images/menu_item/garnish/КАРТОШКА_НА_УГЛЯХ.webp",
+    "name": "Картошка на углях",
+    "description": "Ароматная картошка, запеченная на углях, с хрустящей коркой и нежным внутренним слоем",
+    "price": "100",
+    "weight": "100г"
+  },
+  {
+    "id": 28,
+    "category": "5",
+    "img": "images/menu_item/garnish/КАРТОШКА_С_КУРДЮКОМ.webp",
+    "name": "Картошка с курдюком",
+    "description": "Картошка, приготовленная с курдюком на гриле, сочная и ароматная",
+    "price": "140",
+    "weight": "100г"
+  },
+  {
+    "id": 29,
+    "category": "5",
+    "img": "images/menu_item/garnish/КАРТОШКА_С_САЛОМ.webp",
+    "name": "Картошка с салом",
+    "description": "Картошка с салом, приготовленная на гриле, сочетает аромат сала и хрустящей картошки",
+    "price": "120",
+    "weight": "100г"
+  },
+  {
+    "id": 30,
+    "category": "5",
+    "img": "images/menu_item/garnish/ОВОЩИ_НА_ МАНГАЛЕ.webp",
+    "name": "Овощи на мангале",
+    "description": "Сочные овощи, готовые на мангале, со вкусом копченых углей и ароматными специями",
+    "price": "350",
+    "weight": "300г"
+  },
+  {
+    "id": 31,
+    "category": "5",
+    "img": "images/menu_item/garnish/КАРТОШКА_С_ БЕКОНОМ.webp",
+    "name": "Картошка с беконом",
+    "description": "Картошка с беконом на гриле - сочетание хрустящей картошки и аромата обжаренного бекона",
+    "price": "300",
+    "weight": "230г"
+  },
+  {
+    "id": 32,
+    "category": "6",
+    "img": "images/menu_item/Salad/Цезарь с курицей.webp",
+    "name": "Цезарь с курицей",
+    "description": "Салат Цезарь с курицей - сочная куриная грудка и свежие листья с ароматным соусом",
+    "price": "350",
+    "weight": "300г"
+  },
+  {
+    "id": 33,
+    "category": "6",
+    "img": "images/menu_item/Salad/Греческий.webp",
+    "name": "Греческий",
+    "description": "Греческий салат - сочные огурцы, помидоры, фета и маслины в ароматном соусе",
+    "price": "399",
+    "weight": "300г"
+  },
+  {
+    "id": 34,
+    "category": "6",
+    "img": "images/menu_item/Salad/Свежие овощи.webp",
+    "name": "Свежие овощи",
+    "description": "Салат из свежих овощей - красочное сочетание свежести и натуральных вкусов",
+    "price": "250",
+    "weight": "230г"
+  },
+  {
+    "id": 35,
+    "category": "6",
+    "img": "images/menu_item/Salad/Хоровац.webp",
+    "name": "Хоровац",
+    "description": "Салат Хоровац - вкусное сочетание огурцов, помидоров, лука и зелени с приправами",
+    "price": "320",
+    "weight": "300г"
+  },
+  {
+    "id": 36,
+    "category": "7",
+    "img": "images/menu_item/drinks/добрый яблоко.webp",
+    "name": "лаваш",
+    "description": "Свинананямням",
+    "price": "40",
+    "weight": "шт"
+  },
+  {
+    "id": 37,
+    "category": "8",
+    "img": "images/menu_item/sauce/ТОМАТНЫЙ.webp",
+    "name": "Томатный",
+    "description": "Томатный соус - классический, насыщенный и ароматный, идеально подходит для множества блюд",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 38,
+    "category": "8",
+    "img": "images/menu_item/sauce/ЧЕСНОЧНЫЙ.webp",
+    "name": "Чесночный",
+    "description": "Чесночный соус - насыщенный вкус чеснока, идеально подходит к различным блюдам",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 39,
+    "category": "8",
+    "img": "images/menu_item/sauce/ТЕРИЯКИ.webp",
+    "name": "Терияки",
+    "description": "Соус Терияки - сладкий и соленый соус, придающий блюдам неповторимый вкус и аромат",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 40,
+    "category": "8",
+    "img": "images/menu_item/sauce/НАШАРАБ.webp",
+    "name": "Нашараб",
+    "description": "Соус Нашараб - пикантное и ароматное сочетание специй, идеальное для мясных блюд",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 41,
+    "category": "8",
+    "img": "images/menu_item/sauce/ТКЕМАЛИ.webp",
+    "name": "Ткемали",
+    "description": "Ткемали соус - кисло-сладкий соус с ароматом сливы, популярный в грузинской кухне",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 42,
+    "category": "7",
+    "img": "images/menu_item/drinks/добрый яблоко.webp",
+    "name": "Лепешка",
+    "description": "Свинананямням",
+    "price": "67",
+    "weight": "шт"
+  },
+  {
+    "id": 43,
+    "category": "9",
+    "img": "images/menu_item/drinks/Сок_Добрый.webp",
+    "name": "Добрый яблоко",
+    "description": "Свинананямням",
+    "price": "60",
+    "weight": "0,2"
+  },
+  {
+    "id": 44,
+    "category": "9",
+    "img": "images/menu_item/drinks/Fanta.webp",
+    "name": "Фанта",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 45,
+    "category": "9",
+    "img": "images/menu_item/drinks/Coca-Cola.webp",
+    "name": "Кока-кола",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 46,
+    "category": "9",
+    "img": "images/menu_item/drinks/Чай_Lipton.webp",
+    "name": "Чай Липтон",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 47,
+    "category": "9",
+    "img": "images/menu_item/drinks/Adrenalin_rush.webp",
+    "name": "Адренали раш",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 48,
+    "category": "9",
+    "img": "images/menu_item/drinks/Aqua.webp",
+    "name": "Аква газ.",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 49,
+    "category": "9",
+    "img": "images/menu_item/drinks/Aqua_1.webp",
+    "name": "Аква",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 50,
+    "category": "9",
+    "img": "images/menu_item/drinks/Coca-Cola03.webp",
+    "name": "Кока-кола",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 51,
+    "category": "9",
+    "img": "images/menu_item/drinks/Pepsi03.webp",
+    "name": "Пепси",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 52,
+    "category": "9",
+    "img": "images/menu_item/drinks/АСКАНИЯ.webp",
+    "name": "Аскания",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 53,
+    "category": "9",
+    "img": "images/menu_item/drinks/Лимонад.webp",
+    "name": "Лимонад",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 54,
+    "category": "9",
+    "img": "images/menu_item/drinks/Тархун.webp",
+    "name": "Тархун",
+    "description": "Свинананямням",
+    "price": "",
+    "weight": "0,2"
+  },
+  {
+    "id": 55,
+    "category": "0",
+    "img": "images/menu_item/barbecue/ШЕЙКА_СВИНАЯ.webp",
+    "name": "Свиная шейка",
+    "description": "Сочный и ароматный шашлык из свиной шейки, приготовленный на углях с нежными специями",
+    "price": "410",
+    "weight": "шп"
+  },
+  {
+    "id": 56,
+    "category": "0",
+    "img": "images/menu_item/barbecue/БЕДРО_КУРИНЫЕ.webp",
+    "name": "Куриное бедро",
+    "description": "Сочный шашлык с куриным бедром, приготовленный с травами и ароматными специями",
+    "price": "320",
+    "weight": "шп"
+  },
+  {
+    "id": 57,
+    "category": "0",
+    "img": "images/menu_item/barbecue/МЯКОТЬ_БАРАНИНА.webp",
+    "name": "Мякоть баранина",
+    "description": "Изысканный шашлык из нежной мякоти баранины, приправленный ароматными специями и обжаренный на углях",
+    "price": "530",
+    "weight": "шп"
+  },
+  {
+    "id": 58,
+    "category": "0",
+    "img": "images/menu_item/lula_kebab/ГОВЯДИНА.webp",
+    "name": "Говядина",
+    "description": "Изысканный люля-кебаб с нежной говядиной и оригинальными специями, приготовленный с любовью",
+    "price": "290",
+    "weight": "шп"
+  },
+  {
+    "id": 59,
+    "category": "0",
+    "img": "images/menu_item/shawarma/ШАУРМА_КУРИЦА.webp",
+    "name": "C курицей",
+    "description": "Аппетитная шаурма с нежным куриным мясом и ароматными специями в пышном лаваше",
+    "price": "180",
+    "weight": "шт"
+  },
+  {
+    "id": 60,
+    "category": "0",
+    "img": "images/menu_item/garnish/ХАЧАПУРИ_НА_МАНГАЛЕ.webp",
+    "name": "Хачапури на мангале",
+    "description": "Интересное блюдо хачапури, готовящееся на мангале с сыром и ароматным тестом",
+    "price": "399",
+    "weight": "80г"
+  }
+]

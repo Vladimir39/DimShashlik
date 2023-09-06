@@ -1,35 +1,33 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-import vk from "../../img/vk.png";
-import inst from "../../img/instagram.png";
+import vk from "../../img/VK.svg";
+import inst from "../../img/INST.svg";
 
 function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.blockInfo}>
         <div className={styles.blockSocialMedia}>
-          <a href="https://instagram.com/dim_shashlik_ximki">
-            <div className={styles.blockImg}>
-              <img src={inst} />
-            </div>
-            <div>
-              <p>dim_shashlik_ximki</p>
-            </div>
-          </a>
+          <div className={styles.addressNet}>
+            <a href="https://instagram.com/dim_shashlik_ximki">
+              <div className={styles.blockImg}>
+                <img src={inst} />
+              </div>
+            </a>
+            <a href="https://vk.com/dim_shashlik_ximki">
+              <div className={styles.blockImg}>
+                <img src={vk} />
+              </div>
+            </a>
+          </div>
+          <div className={styles.nameNet}>
+            <p>dim_shashlik_ximki</p>
+          </div>
         </div>
-        <div>
-          <a href="https://vk.com/public211432689">
-            <div className={styles.blockImg}>
-              <img src={vk} />
-            </div>
-            <div>
-              <p>public211432689</p>
-            </div>
-          </a>
-        </div>
+        <div></div>
       </div>
-      <div className={styles.blockInfo}>
+      <div className={styles.blockInfoTwo}>
         <div className={styles.address}>
           <div>
             <h2>+79659898988</h2>

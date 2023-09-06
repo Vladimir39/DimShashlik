@@ -6,7 +6,7 @@ import Skeleton from "../Skeleton/Skeleton";
 
 function Content(props) {
   const itemCard = props.isLoading
-    ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
+    ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
     : props.item.map((meal) => (
         <ItemCard
           key={meal.id}
@@ -15,6 +15,7 @@ function Content(props) {
           img={meal.img}
           description={meal.description}
           price={meal.price}
+          weight={meal.weight}
         />
       ));
 

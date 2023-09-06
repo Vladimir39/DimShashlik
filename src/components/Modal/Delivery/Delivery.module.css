@@ -1,10 +1,36 @@
+h3,
+p,
+label {
+  color: #ffffff;
+}
+input {
+  background-color: #891c218a;
+}
+
 .checkboxAdress {
-  border: 1px solid #ff9900;
+  border: 1px solid #891c21;
   margin-top: 20px;
   padding: 10px;
 }
 .checkbox {
   margin: 20px 0px 20px 0px;
+}
+
+.choiceDelivery {
+  display: flex;
+  margin-bottom: 20px;
+}
+.deliv {
+  margin-left: 50px;
+}
+
+.checkboxNotActive {
+  display: none;
+}
+
+.checkboxActive {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .back {
@@ -24,7 +50,7 @@
 }
 
 .back p:hover {
-  color: #ff9900;
+  color: #ff07139f;
 }
 
 .inputAdress label {
@@ -36,10 +62,36 @@
   width: 100%;
   height: 30px;
   font-size: 15px;
+  color: #fff;
+}
+
+input[type="radio"] {
+  display: none;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 12px; /* Размер квадратной радиокнопки */
+  height: 12px;
+  border: 1px solid #891c21; /* Цвет границы в выключенном состоянии */
+  background-color: #fff; /* Цвет фона в выключенном состоянии */
+  border-radius: 50%; /* Делаем квадрат круглым */
+  margin-right: 5px; /* Расстояние между радиокнопкой и текстом */
+  cursor: pointer;
+}
+
+/* Стили для включенной радиокнопки */
+input[type="radio"]:checked + label::before {
+  background-color: #891c21; /* Цвет фона включенной радиокнопки */
+  border-color: #891c21; /* Цвет границы включенной радиокнопки */
+  cursor: pointer;
 }
 
 .TitleDelivery {
   margin: 10px 0;
+  font-size: 16px;
 }
 
 .times {
@@ -50,20 +102,60 @@
 }
 
 .buttonTimes {
-  background-color: #ffffff;
-  border: 1px dashed #ff9900;
+  background-color: #891c21;
+  border: 1px dashed #555;
   height: 20px;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
 .buttonTimes:hover {
-  background-color: #ff9900;
+  background-color: #000;
 }
 
 .active {
-  background-color: #ff9900;
+  background-color: #000;
+  border: 1px dashed #555;
   height: 20px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+.inputTime {
+  display: block;
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: #891c2198;
+}
+
+.inputTimeActive {
+  display: block;
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: #891c21;
+}
+
+.inputTimeAll {
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: #891c2198;
+}
+
+.inputTimeSlice {
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: #891c21;
+  font-size: 18px;
+}
+
+input[type="time"] {
+  text-align: center;
 }

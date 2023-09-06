@@ -5,6 +5,7 @@ const initialState = {
   totalAmount: 0,
   items: [],
   delivery: {},
+  time: "",
 };
 
 export const basketSlice = createSlice({
@@ -28,6 +29,10 @@ export const basketSlice = createSlice({
 
     addDelivery(state, action) {
       state.delivery = action.payload;
+    },
+
+    addDeliveryTime(state, action) {
+      state.time = action.payload;
     },
 
     setBasketItemPlus(state, action) {
@@ -83,6 +88,7 @@ export const {
   addItems,
   removeItems,
   addDelivery,
+  addDeliveryTime,
 } = basketSlice.actions;
 
 export default basketSlice.reducer;

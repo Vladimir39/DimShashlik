@@ -18,12 +18,22 @@ function App() {
     { id: "5", name: "Гарниры" },
     { id: "6", name: "Салаты" },
     { id: "7", name: "Выпечка" },
-    { id: "8", name: "Напитки" },
+    { id: "8", name: "Соусы" },
+    { id: "9", name: "Напитки" },
   ];
   const categoryId = useSelector((state) => state.filter.categoryId);
   const [items, setItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [cartIsVisible, setCartIsVisible] = React.useState(false);
+  const body = document.body;
+
+  React.useEffect(() => {
+    if (cartIsVisible === true) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+  }, [cartIsVisible]);
 
   React.useEffect(() => {
     setIsLoading(true);
@@ -44,7 +54,7 @@ function App() {
       <Address />
       <Content navigation={NAV_MENU} item={items} isLoading={isLoading} />
       {cartIsVisible && <Modal close={() => setCartIsVisible(false)} />}
-      <BlockIMG />
+      {/* <BlockIMG /> */}
       <Footer />
     </>
   );
