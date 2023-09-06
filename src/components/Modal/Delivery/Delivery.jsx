@@ -87,7 +87,7 @@ function Delivery({ back, register, addDataItemTime }) {
   };
 
   return (
-    <div>
+    <div className={classes.formDelivery}>
       <div onClick={back} className={classes.back}>
         <img src={back1} alt="#" />
         <p>Назад</p>

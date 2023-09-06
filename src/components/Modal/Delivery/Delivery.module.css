@@ -7,6 +7,10 @@ input {
   background-color: #891c218a;
 }
 
+.formDelivery {
+  margin-bottom: 70px;
+}
+
 .checkboxAdress {
   border: 1px solid #891c21;
   margin-top: 20px;
