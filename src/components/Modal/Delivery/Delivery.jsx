@@ -6,25 +6,25 @@ import { addDelivery } from "../../../redux/slices/basketSlice";
 import { useForm } from "react-hook-form";
 
 function Delivery({ back, register, addDataItemTime }) {
+  const time = new Date();
+  const hours = time.getHours();
+  const minutes = time.getMinutes();
+  const formattedHours = hours < 10 ? `0${hours}` : hours.toString();
+  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes.toString();
+  const newTime = formattedHours + ":" + formattedMinutes;
+
   const dispatch = useDispatch();
   const { handleSubmit } = useForm();
   const [timeClass, setTimeClass] = useState(classes.inputTime);
   const [deliveryTime, setDeliveryTime] = useState(true);
   const [activePickup, setActivePickup] = useState(classes.checkboxNotActive);
   const [activeDelivery, setActiveDelivery] = useState(classes.checkboxActive);
+  const [typeDelivery, setTypeDelivery] = useState("Время доставки:");
   const [selectedValue, setSelectedValue] = useState("Доставка");
-
-  const time = new Date();
-  const hours = time.getHours();
-  const minutes = time.getMinutes();
-  const formattedHours = hours < 10 ? `0${hours}` : hours.toString();
-  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes.toString();
-
-  console.log(formattedHours);
-  console.log(formattedMinutes);
+  const [timeValue, setTimeValue] = useState(newTime);
+  const [deliveryValue, setDeliveryValue] = useState("По готовности");
 
   const onSubmit = (data) => {
-    // Обработка данных формы
     dispatch(addDelivery(data));
     console.log(data);
   };
@@ -34,21 +34,23 @@ function Delivery({ back, register, addDataItemTime }) {
 
   const timeOnClickActive = () => {
     setTimeClass(classes.inputTimeActive);
+    setDeliveryValue("По готовности");
   };
   const timeOnClick = () => {
     setTimeClass(classes.inputTime);
   };
 
-  // const onSubmit = (data) => {
-  //   console.log(data);
-  //   dispatch(addDelivery(data));
-  // };
+  const onClickDeliveryTime = () => {
+    setDeliveryValue("По готовности/Доставить ко времени");
+  };
 
   const onClickPickup = () => {
+    setTypeDelivery("Время самовывоза:");
     setActiveDelivery(classes.checkboxNotActive);
     setActivePickup(classes.checkboxActive);
   };
   const onClickDelivery = () => {
+    setTypeDelivery("Время доставки:");
     setActivePickup(classes.checkboxNotActive);
     setActiveDelivery(classes.checkboxActive);
   };
@@ -65,6 +67,7 @@ function Delivery({ back, register, addDataItemTime }) {
       onClick={() => {
         onClickTimeFalse();
         timeOnClick();
+        onClickDeliveryTime();
       }}
       className={classes.inputTimeAll}
       type="button"
@@ -74,15 +77,15 @@ function Delivery({ back, register, addDataItemTime }) {
   ) : (
     <input
       type="time"
-      value={`${formattedHours}:${formattedMinutes}`}
+      value={timeValue}
       className={classes.inputTimeSlice}
       onChange={(e) => onChangeClick(e)}
     />
   );
 
   const onChangeClick = (e) => {
+    setTimeValue(e.target.value);
     const time = e.target.value;
-    console.log(time);
     addDataItemTime(time);
   };
 
@@ -124,7 +127,7 @@ function Delivery({ back, register, addDataItemTime }) {
             </div>
 
             <div className={(classes.checkbox, activePickup)}>
-              <h3>Выбирите один из вариантов:</h3>
+              <h3>Выберите один из вариантов:</h3>
               <div>
                 <input
                   id="myRadio_1"
@@ -159,15 +162,20 @@ function Delivery({ back, register, addDataItemTime }) {
                 />
               </div>
               <div>
-                <label for="phone">Телефон (через +7 без пробелов):</label>
+                <label for="phone">Номер телефона: (+79991112233)</label>
                 <input
                   type="tel"
                   name="phone"
                   placeholder="+79991110000"
-                  pattern="\+7[0-9]{10}"
-                  required
-                  {...register("phone")}
+                  {...register("phone", {
+                    required: true,
+                    pattern: {
+                      value: /\+7[0-9]{10}/,
+                      message: "Введите в правильном формате +79991112233",
+                    },
+                  })}
                 />
+                {/* {errors.phone && <div>{errors.message}</div>} */}
               </div>
               <div>
                 <label for="addition">Комментарий к заказу:</label>
@@ -179,7 +187,7 @@ function Delivery({ back, register, addDataItemTime }) {
                 />
               </div>
             </div>
-            <h3 className={classes.TitleDelivery}>Время доставки:</h3>
+            <h3 className={classes.TitleDelivery}>{typeDelivery}</h3>
             <input
               onClick={(e) => {
                 timeOnClickActive();
@@ -188,11 +196,14 @@ function Delivery({ back, register, addDataItemTime }) {
               }}
               className={timeClass}
               type="button"
-              value="По готовности"
+              value={deliveryValue}
               name="readyTime"
               // {...register("deliveryTime")}
             />
             {timeDelivery}
+            <p className={classes.infoDelivery}>
+              Доставка от 1500 руб. БЕСПЛАТНО
+            </p>
           </div>
         </form>
       </div>

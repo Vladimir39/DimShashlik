@@ -1,31 +1,62 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Modal.module.css";
 import CartItem from "./CartItem/CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchOrder } from "../../redux/slices/orderSlice";
+import { remove } from "../../redux/slices/basketSlice";
 import { useForm } from "react-hook-form";
 
 import zeroBasket from "../../img/BasketZero.png";
 import ClearTop from "../../img/ClearTop.svg";
 import Delivery from "./Delivery/Delivery";
+import ModalFinish from "./ModalFinish/ModalFinish";
+
+function XXX({
+  orderDeliveryPhone,
+  onClickBasketValue,
+  onClickBasketNoActive,
+  onClickClearBasket,
+}) {
+  React.useEffect(() => {
+    if (orderDeliveryPhone !== "") {
+      onClickBasketValue();
+      onClickBasketNoActive();
+      onClickClearBasket();
+    }
+  }, [orderDeliveryPhone]);
+
+  return null; // Возвращаем null, так как это компонент-обертка для эффекта
+}
 
 function Modal(props) {
-  const { handleSubmit, register } = useForm();
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm({
+    mode: "onBlur",
+    defaultValues: {
+      address: "",
+      phone: "+7",
+    },
+  });
   const dispatch = useDispatch();
   const basketItem = useSelector((state) => state.basket.items);
   const itemPrice = useSelector((state) => state.basket.totalPrice);
   const [basket, setBasket] = useState(true);
   const [time, setTime] = useState("");
+  const [basketValue, setBasketValue] = useState(false);
+  const [styleBasket, setStyleBasket] = useState(styles.overlay);
+  const [orderDeliveryPhone, setOrderDeliveryPhone] = useState("");
 
   const addTimeHandler = (time) => {
     setTime(time);
   };
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     // Ваша обработка данных формы в родительском компоненте
-    console.log("Данные из родительского компонента:", data);
 
-    order = {
+    const newOrder = {
       price: itemPrice,
       delivery: {
         addressPoint: data.addressPoint,
@@ -36,26 +67,26 @@ function Modal(props) {
       },
       basketItem,
     };
-    console.log(order);
-    dispatch(fetchOrder(order));
+    dispatch(fetchOrder(newOrder));
+    console.log(newOrder);
+    await new Promise((resolve) => setTimeout(resolve, 100)); // Ждем некоторое время (может потребоваться настраивать)
+    setOrderDeliveryPhone(newOrder.delivery.phone);
   };
 
-  const handleChildFormSubmit = () => {
+  const handleChildFormSubmit = async () => {
     // Вызов handleSubmit из родительского компонента
-    handleSubmit(onSubmit)();
+    await handleSubmit(onSubmit)();
   };
 
-  let order = {
-    price: "",
-    delivery: {
-      addressPoint: "",
-      address: "",
-      phone: "",
-      addition: "",
-      time: "",
-    },
-    basketItem,
-  };
+  // Закрытие модального окна через 10 секунд
+  React.useEffect(() => {
+    if (basketValue) {
+      const timer = setTimeout(() => {
+        props.close(); // Вызов функции для закрытия модального окна
+      }, 10000); // 10 секунд в миллисекундах
+      return () => clearTimeout(timer); // Очистка таймера при размонтировании компонента
+    }
+  }, [basketValue, props]);
 
   const zeroCart = (
     <div className={styles.basketZero}>
@@ -68,22 +99,20 @@ function Modal(props) {
     setBasket(true);
   };
 
-  // const dataItem = (time) => {
-  //   console.log(time);
-  //   order = {
-  //     price: itemPrice,
-  //     delivery: {
-  //       addressPoint: dataDelivery.addressPoint,
-  //       address: dataDelivery.address,
-  //       phone: dataDelivery.phone,
-  //       addition: dataDelivery.addition,
-  //       time: time,
-  //     },
-  //     basketItem,
-  //   };
-  //   console.log(order);
-  //   dispatch(fetchOrder(order));
-  // };
+  const onClickBasketValue = () => {
+    setBasketValue(true);
+  };
+
+  const onClickBasketNoActive = () => {
+    setStyleBasket(styles.overlayNoActive);
+  };
+  const onClickBasketActive = () => {
+    setStyleBasket(styles.overlay);
+  };
+
+  const onClickClearBasket = () => {
+    dispatch(remove());
+  };
 
   const DeliveryAndCart =
     basketItem.length > 0
@@ -114,38 +143,55 @@ function Modal(props) {
       <button onClick={() => setBasket(false)}>К доставке</button>
     ) : (
       <button
-        onClick={() => {
-          // dataItem();
-          handleChildFormSubmit();
+        onClick={async () => {
+          await handleChildFormSubmit();
         }}
       >
         Заказать
       </button>
     );
   const notActiveButton =
-    basketItem.length > 0 ? buttonText : <button>Брат, закажи блюдо!</button>;
+    basketItem.length > 0 ? (
+      buttonText
+    ) : (
+      <button onClick={props.close}>Добавьте блюдо в корзину!</button>
+    );
 
   return (
-    <div className={styles.overlay} onClick={props.close}>
-      <div className={styles.drawer} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.title}>
-          <h2>Корзина</h2>
-          <img src={ClearTop} onClick={props.close} />
-        </div>
-        <div className={styles.br}></div>
-        <div className={styles.item}>{basketDecor}</div>
-        <div className={styles.CartTotalBlock}>
-          <ul>
-            <li>
-              <span>Итого:</span>
-              <div></div>
-              <b>{itemPrice} руб.</b>
-            </li>
-          </ul>
-          {notActiveButton}
+    <>
+      <div className={styleBasket} onClick={props.close}>
+        <div className={styles.drawer} onClick={(e) => e.stopPropagation()}>
+          <div className={styles.title}>
+            <h2>Корзина</h2>
+            <img src={ClearTop} onClick={props.close} />
+          </div>
+          <div className={styles.br}></div>
+          <div className={styles.item}>{basketDecor}</div>
+          <div className={styles.CartTotalBlock}>
+            <ul>
+              <li>
+                <span>Итого:</span>
+                <div></div>
+                <b>{itemPrice} руб.</b>
+              </li>
+            </ul>
+            {notActiveButton}
+          </div>
         </div>
       </div>
-    </div>
+      {basketValue && (
+        <ModalFinish
+          closeFinish={props.close}
+          baskentActive={onClickBasketActive}
+        />
+      )}
+      <XXX
+        orderDeliveryPhone={orderDeliveryPhone}
+        onClickBasketValue={onClickBasketValue}
+        onClickBasketNoActive={onClickBasketNoActive}
+        onClickClearBasket={onClickClearBasket}
+      />
+    </>
   );
 }
 

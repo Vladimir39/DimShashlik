@@ -110,7 +110,8 @@ p {
     font-size: 12px;
   }
   .imgPrice img {
-    width: 100%;
+    width: 220px;
+    height: 150px;
   }
 }
 
@@ -120,13 +121,13 @@ p {
 @media (max-width: 480px) {
   .container {
     width: 180px;
-    height: 340px;
+    height: 300px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
   .imgPrice img {
-    width: 100%;
-    height: 150px;
+    width: 180px;
+    height: 120px;
   }
   .title h3 {
     font-size: 14px;

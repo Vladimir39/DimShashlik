@@ -79,3 +79,9 @@
     margin: 12px 0px 0px 4px;
   }
 }
+@media (max-width: 380px) {
+  .address p {
+    padding-top: 2px;
+    font-size: 11px;
+  }
+}

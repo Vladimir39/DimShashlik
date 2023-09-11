@@ -79,6 +79,13 @@ export const basketSlice = createSlice({
       }, state.totalPrice);
       state.items = state.items.filter((obj) => obj.id !== action.payload);
     },
+    remove(state) {
+      state.totalPrice = 0;
+      state.totalAmount = 0;
+      state.items = [];
+      state.delivery = {};
+      state.time = "";
+    },
   },
 });
 
@@ -89,6 +96,7 @@ export const {
   removeItems,
   addDelivery,
   addDeliveryTime,
+  remove,
 } = basketSlice.actions;
 
 export default basketSlice.reducer;

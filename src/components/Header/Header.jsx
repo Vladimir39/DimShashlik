@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderCardButton from "./HeaderButton";
 
-import logo from "../../img/logoNewV3.png";
+import logo from "../../img/LOGO1.jpg";
 import telefon from "../../img/telefonV2.svg";
 
 import styles from "./Header.module.css";

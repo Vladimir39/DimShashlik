@@ -115,9 +115,14 @@ p {
 @media (max-width: 480px) {
   .description {
     margin-left: 10px;
-  }
-  .description {
     width: 140px;
+  }
+  .title h2 {
+    width: 150px;
+    font-size: 14px;
+  }
+  .price p {
+    font-size: 15px;
   }
   .input {
     margin-top: 20px;
@@ -126,10 +131,6 @@ p {
   }
   .newInput {
     width: 15px;
-  }
-  .quantityButton {
-    width: 30px;
-    height: 30px;
   }
   .itemPrice {
     width: 150px;
