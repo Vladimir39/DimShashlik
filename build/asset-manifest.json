@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a328e960.chunk.css",
-    "main.js": "/static/js/main.a766824a.chunk.js",
-    "main.js.map": "/static/js/main.a766824a.chunk.js.map",
+    "main.js": "/static/js/main.4cfe3584.chunk.js",
+    "main.js.map": "/static/js/main.4cfe3584.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d935bac7.js",
     "runtime-main.js.map": "/static/js/runtime-main.d935bac7.js.map",
     "static/js/2.32ca617c.chunk.js": "/static/js/2.32ca617c.chunk.js",
@@ -15,16 +15,16 @@
     "static/media/ClearTop.d7d66a49.svg": "/static/media/ClearTop.d7d66a49.svg",
     "static/media/INST.2875446a.svg": "/static/media/INST.2875446a.svg",
     "static/media/LOGO.a59e2784.jpg": "/static/media/LOGO.a59e2784.jpg",
+    "static/media/LOGO1.dc3b6b20.jpg": "/static/media/LOGO1.dc3b6b20.jpg",
     "static/media/VK.a4d29f9a.svg": "/static/media/VK.a4d29f9a.svg",
     "static/media/ItemCard.module.css": "/static/media/carOboiNew.58104642.svg",
     "static/media/clear.b7493bcd.svg": "/static/media/clear.b7493bcd.svg",
-    "static/media/logoNewV3.8923996a.png": "/static/media/logoNewV3.8923996a.png",
     "static/media/telefonV2.19ab94c1.svg": "/static/media/telefonV2.19ab94c1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d935bac7.js",
     "static/js/2.32ca617c.chunk.js",
     "static/css/main.a328e960.chunk.css",
-    "static/js/main.a766824a.chunk.js"
+    "static/js/main.4cfe3584.chunk.js"
   ]
 }
