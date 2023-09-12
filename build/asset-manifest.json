@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da9462ca.css",
+    "main.js": "/static/js/main.a3d4e2b0.js",
+    "static/media/carOboiNew.svg": "/static/media/carOboiNew.5810464299906f2a5abf.svg",
+    "static/media/Back.svg": "/static/media/Back.24c37844dcc83bd994193469bfeeca36.svg",
+    "static/media/LOGO1.jpg": "/static/media/LOGO1.dc3b6b20649bbe2213ca.jpg",
+    "static/media/LOGO.jpg": "/static/media/LOGO.a59e2784d8fc19547f41.jpg",
+    "static/media/INST.svg": "/static/media/INST.2875446a445028cfd231df264ca70151.svg",
+    "static/media/clear.svg": "/static/media/clear.b7493bcd52c538ae66b2a2f4f33b9103.svg",
+    "static/media/BasketZero.png": "/static/media/BasketZero.41108a471b981a7dfaf1.png",
+    "static/media/telefonV2.svg": "/static/media/telefonV2.19ab94c1ab4ba6a622c85a7f53b69d9f.svg",
+    "static/media/VK.svg": "/static/media/VK.a4d29f9a30065b691072104951106657.svg",
+    "static/media/ClearTop.svg": "/static/media/ClearTop.d7d66a499b9c95389770da9a593ffd80.svg",
+    "index.html": "/index.html",
+    "main.da9462ca.css.map": "/static/css/main.da9462ca.css.map",
+    "main.a3d4e2b0.js.map": "/static/js/main.a3d4e2b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da9462ca.css",
+    "static/js/main.a3d4e2b0.js"
+  ]
+}
