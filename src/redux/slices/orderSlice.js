@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchOrder = createAsyncThunk("/", async (order) => {
-  const { data } = await axios.post("http://localhost:4444/", order);
+  const { data } = await axios.post("http://45.12.19.21:4444/", order);
   return data;
 });
 
