@@ -16,6 +16,7 @@ function Content(props) {
           description={meal.description}
           price={meal.price}
           weight={meal.weight}
+          categoryName={meal.categoryName}
         />
       ));
 

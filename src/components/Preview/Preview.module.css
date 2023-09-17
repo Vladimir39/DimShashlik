@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.infoBlock h3 {
+  font-size: 28px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding-top: 20px;
+  background: linear-gradient(180deg, #fff 0%, #891c21 69.79%, #891c21 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.infoBlock p {
+  font-size: 28px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #fff 0%, #891c21 69.79%, #891c21 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: 1200px;
+  height: 130px;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.infoBlock img {
+  width: 230px;
+  height: 130px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 0;
+    width: 768px;
+  }
+  .infoBlock h3 {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  .infoBlock p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 480px;
+    height: 100px;
+  }
+
+  .infoBlock img {
+    width: 150px;
+    height: 100px;
+  }
+  .infoBlock h3 {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .infoBlock p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: 80px;
+    margin-bottom: -15px;
+  }
+  .infoBlock img {
+    width: 140px;
+    height: 80px;
+  }
+  .info {
+    width: 70%;
+    font-size: 16px;
+    background: linear-gradient(180deg, #fff 0%, #891c21 69.79%, #891c21 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .img {
+    display: none;
+  }
+}

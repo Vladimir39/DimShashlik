@@ -9,7 +9,7 @@ import styles from "./CardButton.module.css";
 import { useEffect } from "react";
 
 function CardButton(props) {
-  const { id, name, price, img } = props.date;
+  const { id, name, price, img, categoryName } = props.date;
 
   const dispatch = useDispatch();
   const basketItem = useSelector((state) =>
@@ -44,6 +44,7 @@ function CardButton(props) {
       name,
       price,
       img,
+      categoryName,
     };
     dispatch(addItems(cartItem));
     setIsAmountValid(false);

@@ -29,11 +29,7 @@ function XXX({
 }
 
 function Modal(props) {
-  const {
-    handleSubmit,
-    register,
-    formState: { errors },
-  } = useForm({
+  const { handleSubmit, register } = useForm({
     mode: "onBlur",
     defaultValues: {
       address: "",
@@ -68,7 +64,6 @@ function Modal(props) {
       basketItem,
     };
     dispatch(fetchOrder(newOrder));
-    console.log(newOrder);
     await new Promise((resolve) => setTimeout(resolve, 100)); // Ждем некоторое время (может потребоваться настраивать)
     setOrderDeliveryPhone(newOrder.delivery.phone);
   };

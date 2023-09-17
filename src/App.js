@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Modal from "./components/Modal/Modal";
 import Address from "./components/address/address";
 import Footer from "./components/Footer/Footer";
+import Preview from "./components/Preview/Preview";
 
 function App() {
   const NAV_MENU = [
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <>
+      <Preview />
       <Header open={() => setCartIsVisible(true)} />
       <Address />
       <Content navigation={NAV_MENU} item={items} isLoading={isLoading} />
