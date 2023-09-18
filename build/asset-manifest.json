@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.60d07994.css",
-    "main.js": "/static/js/main.1f1d86b8.js",
+    "main.css": "/static/css/main.4980e018.css",
+    "main.js": "/static/js/main.2d55263a.js",
     "static/media/carOboiNew.svg": "/static/media/carOboiNew.5810464299906f2a5abf.svg",
     "static/media/Back.svg": "/static/media/Back.24c37844dcc83bd994193469bfeeca36.svg",
     "static/media/LOGO1.jpg": "/static/media/LOGO1.dc3b6b20649bbe2213ca.jpg",
@@ -15,11 +15,11 @@
     "static/media/VK.svg": "/static/media/VK.a4d29f9a30065b691072104951106657.svg",
     "static/media/ClearTop.svg": "/static/media/ClearTop.d7d66a499b9c95389770da9a593ffd80.svg",
     "index.html": "/index.html",
-    "main.60d07994.css.map": "/static/css/main.60d07994.css.map",
-    "main.1f1d86b8.js.map": "/static/js/main.1f1d86b8.js.map"
+    "main.4980e018.css.map": "/static/css/main.4980e018.css.map",
+    "main.2d55263a.js.map": "/static/js/main.2d55263a.js.map"
   },
   "entrypoints": [
-    "static/css/main.60d07994.css",
-    "static/js/main.1f1d86b8.js"
+    "static/css/main.4980e018.css",
+    "static/js/main.2d55263a.js"
   ]
 }
