@@ -116,6 +116,25 @@ p {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 180px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .imgPrice img {
+    width: 180px;
+    height: 120px;
+  }
+  .title h3 {
+    font-size: 14px;
+  }
+  .title p {
+    font-size: 10px;
+  }
+  .title span {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 480px) {

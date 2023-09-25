@@ -6,7 +6,6 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 function ModalFinish(props) {
   const orderPost = useSelector((state) => state.order.posts.items);
-  console.log(orderPost);
   return (
     <div
       className={styles.modalFinish}
@@ -21,7 +20,7 @@ function ModalFinish(props) {
             <h2>БЛАГОДАРИМ ЗА ЗАКАЗ!</h2>
             <p>С вами свяжутся в ближайшее время</p>
             <p>
-              Номер вашего заказ:{" "}
+              Номер вашего заказа:{" "}
               <span className={styles.span}>{orderPost}</span>
             </p>
           </div>

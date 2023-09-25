@@ -102,6 +102,16 @@
     margin-left: 20%;
   }
 }
+
+@media (max-width: 768px) {
+  .form button {
+    left: 0;
+  }
+  .input {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .form button {
     left: 2%;

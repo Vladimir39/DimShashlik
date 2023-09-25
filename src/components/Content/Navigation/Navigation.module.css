@@ -86,6 +86,9 @@ li:hover::after {
   }
 }
 @media (max-width: 768px) {
+  .navigastion {
+    margin-bottom: 100px;
+  }
   .navigastion ul {
     padding: 10px;
     display: grid;
