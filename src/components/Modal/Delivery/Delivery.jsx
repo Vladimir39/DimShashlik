@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Delivery.module.css";
 import back1 from "../../../img/Back.svg";
 import { useDispatch } from "react-redux";
@@ -23,6 +23,15 @@ function Delivery({ back, register, addDataItemTime }) {
   const [selectedValue, setSelectedValue] = useState("Доставка");
   const [timeValue, setTimeValue] = useState(newTime);
   const [deliveryValue, setDeliveryValue] = useState("По готовности");
+  const [noActive, setNoActive] = useState(false);
+
+  useEffect(() => {
+    if (hours >= 10 && hours <= 23) {
+      setNoActive(false);
+    } else {
+      setNoActive(true);
+    }
+  }, [time]);
 
   const onSubmit = (data) => {
     dispatch(addDelivery(data));
@@ -128,17 +137,7 @@ function Delivery({ back, register, addDataItemTime }) {
 
             <div className={(classes.checkbox, activePickup)}>
               <h3>Выберите один из вариантов:</h3>
-              <div>
-                <input
-                  id="myRadio_1"
-                  type="radio"
-                  name="address"
-                  value="г. Химки, пр-т Юбилейный, 51, к.1"
-                  {...register("addressPoint")}
-                />
-                <label for="myRadio_1">г. Химки, пр-т Юбилейный, 51, к.1</label>
-              </div>
-              <div>
+              <div className={classes.inputAdress}>
                 <input
                   id="myRadio_2"
                   type="radio"
@@ -150,16 +149,79 @@ function Delivery({ back, register, addDataItemTime }) {
                   г. Химки, пр-т Мельникова, 2Б, стр.1
                 </label>
               </div>
+              <div>
+                <input
+                  id="myRadio_1"
+                  type="radio"
+                  name="address"
+                  value="г. Химки, пр-т Юбилейный, 33, стр.1"
+                  {...register("addressPoint")}
+                  disabled={noActive}
+                />
+                <label
+                  for="myRadio_1"
+                  className={noActive === true ? classes.textColorLabel : ""}
+                >
+                  г. Химки, пр-т Юбилейный, 33, стр.1
+                </label>
+              </div>
             </div>
             <div className={classes.inputAdress}>
               <div className={activeDelivery}>
-                <label for="address">Доставить по адресу:</label>
+                <label for="address" className={classes.labelBlock}>
+                  Доставить по адресу:
+                </label>
+                <label for="address">Улица:</label>
                 <input
                   type="text"
                   name="address"
-                  placeholder="пр-т Мельникова, 2Б, стр.1"
+                  placeholder="пр-т Мельникова"
                   {...register("address")}
                 />
+                <div className={classes.deliveryBlock}>
+                  <div>
+                    <div className={classes.inputBlock}>
+                      <label for="dom">Дом:</label>
+                      <input
+                        type="text"
+                        name="dom"
+                        placeholder="1"
+                        width="10px"
+                        {...register("dom")}
+                      />
+                    </div>
+                    <div className={classes.inputBlock}>
+                      <label for="entrance">Подъезд:</label>
+                      <input
+                        type="text"
+                        name="entrance"
+                        placeholder="1"
+                        width="10px"
+                        {...register("entrance")}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className={classes.inputBlock}>
+                      <label for="itash">Этаж:</label>
+                      <input
+                        type="text"
+                        name="itash"
+                        placeholder="5"
+                        {...register("itash")}
+                      />
+                    </div>
+                    <div className={classes.inputBlock}>
+                      <label for="kv">Квартира:</label>
+                      <input
+                        type="text"
+                        name="kv"
+                        placeholder="30"
+                        {...register("kv")}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <label for="phone">Номер телефона: (+79991112233)</label>

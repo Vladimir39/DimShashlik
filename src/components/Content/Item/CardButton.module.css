@@ -6,6 +6,16 @@
   align-items: center;
 }
 
+.form .noActive {
+  background-color: #555;
+  width: 110%;
+  border-color: white;
+  cursor: pointer;
+}
+.form .noActive:hover {
+  background-color: #555;
+}
+
 .form button {
   position: relative;
   display: inline-block;

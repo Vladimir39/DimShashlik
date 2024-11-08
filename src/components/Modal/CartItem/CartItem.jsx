@@ -15,7 +15,7 @@ function CartItem({ id, name, price, img, amount }) {
     dispatch(setBasketItemPlus(id));
   };
   const addCountMinus = () => {
-    if (amount <= 1) {
+    if ((id === 76 && amount <= 5) || amount <= 1) {
       dispatch(removeItems(id));
     } else {
       dispatch(setBasketItemMinus(id));

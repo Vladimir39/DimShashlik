@@ -77,12 +77,12 @@ input[type="radio"] {
 input[type="radio"] + label::before {
   content: "";
   display: inline-block;
-  width: 12px; /* Размер квадратной радиокнопки */
+  width: 12px;
   height: 12px;
-  border: 1px solid #891c21; /* Цвет границы в выключенном состоянии */
-  background-color: #fff; /* Цвет фона в выключенном состоянии */
-  border-radius: 50%; /* Делаем квадрат круглым */
-  margin-right: 5px; /* Расстояние между радиокнопкой и текстом */
+  border: 1px solid #891c21;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -167,4 +167,29 @@ input[type="time"] {
 .infoDelivery {
   margin-top: 30px;
   text-align: start;
+}
+
+.deliveryBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labelBlock {
+  margin-bottom: 15px;
+}
+
+.inputBlock {
+  width: 150px;
+}
+
+.textColorLabel {
+  color: #555;
+}
+.inputAdress {
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .inputBlock {
+    width: 100px;
+  }
 }

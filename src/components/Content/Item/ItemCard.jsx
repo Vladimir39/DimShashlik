@@ -3,10 +3,25 @@ import styles from "./ItemCard.module.css";
 import CardButton from "./CardButton";
 
 function ItemCard(props) {
+  const [isDisabled, setIsDisabled] = React.useState(false);
+
+  const time = new Date();
+  const hours = time.getHours();
+
+  React.useEffect(() => {
+    if (hours >= 10 && hours < 23) {
+      setIsDisabled(false);
+    } else {
+      if (props.categoryName === "САЛАТ" || props.categoryName === "МУЧНОЕ") {
+        setIsDisabled(true);
+      }
+    }
+  }, [time]);
+
   return (
     <div className={styles.container}>
       <div className={styles.imgPrice}>
-        <img src={props.img} />
+        <img src={props.img} alt="Блюдо" />
         <div className={styles.price}>
           <h1>{props.price}</h1>
         </div>
@@ -24,7 +39,7 @@ function ItemCard(props) {
       </div>
 
       <div className={styles.button}>
-        <CardButton date={props} />
+        <CardButton date={props} isDisabled={isDisabled} />
       </div>
     </div>
   );

@@ -72,6 +72,10 @@ li:hover::after {
   .navigastion ul {
     padding: 10px;
     align-items: center;
+    font-size: 12px;
+  }
+  .navigastion li {
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {

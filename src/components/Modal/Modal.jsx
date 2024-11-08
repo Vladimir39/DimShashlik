@@ -33,6 +33,9 @@ function Modal(props) {
     mode: "onBlur",
     defaultValues: {
       address: "",
+      dom: "",
+      itash: "",
+      kv: "",
       phone: "+7",
     },
   });
@@ -57,6 +60,10 @@ function Modal(props) {
       delivery: {
         addressPoint: data.addressPoint,
         address: data.address,
+        dom: data.dom,
+        entrance: data.entrance,
+        itash: data.itash,
+        kv: data.kv,
         phone: data.phone,
         addition: data.addition,
         time: time,

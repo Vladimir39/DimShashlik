@@ -15,6 +15,7 @@ function CardButton(props) {
   const basketItem = useSelector((state) =>
     state.basket.items.find((obj) => obj.id === id)
   );
+
   const [isAmountValid, setIsAmountValid] = React.useState(!basketItem);
   const addedAmount = basketItem == undefined ? 0 : basketItem.amount;
 
@@ -29,8 +30,12 @@ function CardButton(props) {
     };
     dispatch(addItems(cartItemId));
   };
+
   const addCountMinus = () => {
-    if (basketItem.amount <= 1) {
+    if (
+      (basketItem.id === 76 && basketItem.amount <= 5) ||
+      basketItem.amount <= 1
+    ) {
       setIsAmountValid(true);
       dispatch(removeItems(id));
     } else {
@@ -51,7 +56,13 @@ function CardButton(props) {
   };
 
   const inputQuantity = isAmountValid ? (
-    <button onClick={addOrder}>В корзину</button>
+    <button
+      className={props.isDisabled ? styles.noActive : ""}
+      onClick={addOrder}
+      disabled={props.isDisabled}
+    >
+      {props.isDisabled ? "С 10:00" : "В корзину"}
+    </button>
   ) : (
     <div className={styles.inputContainer}>
       <div className={styles.input}>

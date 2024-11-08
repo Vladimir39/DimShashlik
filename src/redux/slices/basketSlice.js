@@ -14,10 +14,15 @@ export const basketSlice = createSlice({
   reducers: {
     addItems(state, action) {
       const findItem = state.items.find((obj) => obj.id === action.payload.id);
+
       if (findItem) {
         findItem.amount++;
       } else {
-        state.items.push({ ...action.payload, amount: 1 });
+        if (action.payload.id === 76) {
+          state.items.push({ ...action.payload, amount: 5 });
+        } else {
+          state.items.push({ ...action.payload, amount: 1 });
+        }
       }
       state.totalPrice = state.items.reduce((sum, obj) => {
         return obj.price * obj.amount + sum;

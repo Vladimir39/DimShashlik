@@ -1,0 +1,73 @@
+.container {
+  margin: 5px;
+}
+
+.inputTel {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pickupBlock {
+  width: 100%;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+  position: relative; /* Добавлено для абсолютного позиционирования */
+}
+
+#point1 {
+  display: inline-block;
+}
+
+#point2 {
+  display: inline-block;
+}
+
+.radioLabel {
+  color: black;
+  cursor: pointer;
+  display: block; /* Сделать label блочным элементом */
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Абсолютное позиционирование */
+  top: -10%;
+  left: 7%;
+  padding: 10px; /* Обеспечить padding */
+  box-sizing: border-box; /* Включить padding и border в общую ширину и высоту */
+  line-height: 40px;
+  border-radius: 10px; /* Соответствует радиусу блока */
+  text-align: left;
+}
+
+.svgIcon {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 10px; /* Добавить отступ */
+}
+
+.radioLabel:hover {
+  border: 2px solid #fa2742; /* Цвет при наведении */
+}
+
+.active {
+  border: 2px solid #fa2742;
+}
+
+.button {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #fa2742;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #fa2742;
+  color: white;
+}

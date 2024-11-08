@@ -27,18 +27,18 @@ function Header(props) {
             <div className={styles.mainAdress}>
               <div className={styles.adress}>
                 <div>
-                  <h2>+79659898988</h2>
-                </div>
-                <div>
-                  <p>г. Химки, пр-т Юбилейный, 51, к.1</p>
-                </div>
-              </div>
-              <div className={styles.adress}>
-                <div>
                   <h2>+79619797977</h2>
                 </div>
                 <div>
                   <p>г. Химки, пр-т Мельникова, 2Б, стр.1</p>
+                </div>
+              </div>
+              <div className={styles.adress}>
+                <div>
+                  <h2>+79659898988</h2>
+                </div>
+                <div>
+                  <p>г. Химки, пр-т Юбилейный, 33, стр.1</p>
                 </div>
               </div>
             </div>

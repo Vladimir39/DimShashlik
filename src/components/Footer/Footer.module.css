@@ -109,6 +109,15 @@ a {
   animation: move-light 0.7s;
 }
 
+.addressINN {
+  display: flex;
+  font-size: 8px;
+}
+.PaddressINN {
+  margin-right: 10px;
+  color: rgba(148, 148, 148, 0.418);
+}
+
 @keyframes move-light {
   from {
     transform: translateX(-4em) skewX(-45deg);

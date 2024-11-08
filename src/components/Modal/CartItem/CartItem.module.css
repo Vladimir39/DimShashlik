@@ -22,8 +22,8 @@ p {
 }
 
 .itemClear img {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .itemImg {
@@ -32,6 +32,7 @@ p {
 
 .itemImg img {
   height: 90px;
+  width: 135px;
   border-radius: 20px 0 0 20px;
 }
 
@@ -44,8 +45,8 @@ p {
   width: 130px;
 }
 .title h2 {
-  width: 170px;
-  font-size: 16px;
+  width: 210px;
+  font-size: 14px;
 }
 
 .itemPrice {
@@ -58,6 +59,7 @@ p {
   width: 60%;
   padding-top: 10%;
   margin-right: 30px;
+  font-size: 14px;
 }
 
 /* Изменить шрифт .................................................................*/

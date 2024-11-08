@@ -95,6 +95,10 @@
   font-family: "Russo One", sans-serif;
 }
 
+.textColor {
+  color: #555;
+}
+
 @media (max-width: 1200px) {
   .header {
     width: 1000px;

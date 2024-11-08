@@ -6,7 +6,7 @@ import inst from "../../img/INST.svg";
 
 function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.blockInfo}>
         <div className={styles.blockSocialMedia}>
           <div className={styles.addressNet}>
@@ -33,7 +33,7 @@ function Footer() {
             <h2>+79659898988</h2>
           </div>
           <div>
-            <p>г. Химки, пр-т Юбилейный, 51, к.1</p>
+            <p>г. Химки, пр-т Юбилейный, 33, стр.1</p>
           </div>
         </div>
         <div className={styles.address}>
@@ -45,7 +45,16 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+      <div className={styles.addressINN}>
+        <p className={styles.PaddressINN}>&copy; 2024 “Дым шашлык”</p>
+        <p className={styles.PaddressINN}>
+          Копляков Сергей Михайлович ИНН 391803344140{" "}
+        </p>
+        <p className={styles.PaddressINN}>
+          г. Химки, пр-т Мельникова, 2Б, стр.1
+        </p>
+      </div>
+    </footer>
   );
 }
 

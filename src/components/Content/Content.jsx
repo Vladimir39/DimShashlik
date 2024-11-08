@@ -21,10 +21,10 @@ function Content(props) {
       ));
 
   return (
-    <div className={styles.content}>
+    <main className={styles.content}>
       <Navigation navigation={props.navigation} />
       <section className={styles.container}>{itemCard}</section>
-    </div>
+    </main>
   );
 }
 

@@ -20,11 +20,8 @@
   justify-content: start;
 }
 
-.address p {
-  color: #fff;
-}
-.address h2 {
-  color: #fff;
+.textColor {
+  color: #555;
 }
 
 @media (max-width: 768px) {

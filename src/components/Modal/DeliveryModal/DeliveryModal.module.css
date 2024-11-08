@@ -1,0 +1,92 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.body {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.btn {
+  width: 100%;
+  background-color: #fa2742;
+  border: 1px solid #fa2742;
+}
+
+.btn:hover {
+  background-color: #fa2743ad;
+  border: 1px solid #fa2743ad;
+}
+
+.btnPrimary {
+  background-color: #4caf50; /* Ваш цвет */
+  border-color: #4caf50;
+}
+
+.custom-modal .modal-dialog {
+  width: 90%; /* Для мобильных устройств */
+  max-width: 600px; /* Ограничиваем максимальную ширину на больших экранах */
+  background-color: black;
+}
+
+.formDelivery {
+  margin: 0 auto;
+
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgb(158, 158, 158);
+}
+
+.formDelivery h2 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.orderTypeToggle {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 403px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+}
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  color: black;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.radioInput:checked + .radioLabel {
+  background-color: #fa2742; /* Цвет для выбранного состояния */
+  color: white; /* Цвет текста для выбранного состояния */
+}
+
+.radioLabel:hover {
+  background-color: #e0e0e0; /* Цвет при наведении */
+}
+
+@media (min-width: 768px) {
+  .custom-modal .modal-dialog {
+    width: 70%; /* Более широкий вид на планшетах */
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-modal .modal-dialog {
+    width: 50%; /* Ограничиваем на больших экранах */
+  }
+}

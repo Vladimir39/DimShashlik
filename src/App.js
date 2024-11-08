@@ -6,20 +6,23 @@ import { useSelector } from "react-redux";
 import Modal from "./components/Modal/Modal";
 import Address from "./components/address/address";
 import Footer from "./components/Footer/Footer";
-import Preview from "./components/Preview/Preview";
+import DeliveryModal from "./components/Modal/DeliveryModal/DeliveryModal";
+
+// import Preview from "./components/Preview/Preview";
 
 function App() {
   const NAV_MENU = [
     { id: "0", name: "Популярные" },
-    { id: "1", name: "Шашлык" },
-    { id: "2", name: "Шаурма" },
-    { id: "3", name: "Люля-кебаб" },
-    { id: "4", name: "Рыба" },
-    { id: "5", name: "Гарниры" },
-    { id: "6", name: "Салаты" },
-    { id: "7", name: "Выпечка" },
-    { id: "8", name: "Соусы" },
-    { id: "9", name: "Напитки" },
+    { id: "1", name: "Сеты" },
+    { id: "2", name: "Шашлык" },
+    { id: "3", name: "Шаурма" },
+    { id: "4", name: "Люля-кебаб" },
+    { id: "5", name: "Рыба" },
+    { id: "6", name: "Гарниры" },
+    { id: "7", name: "Салаты" },
+    { id: "8", name: "Мучное" },
+    { id: "9", name: "Соусы" },
+    { id: "a", name: "Напитки" },
   ];
   const categoryId = useSelector((state) => state.filter.categoryId);
   const [items, setItems] = React.useState([]);
@@ -50,9 +53,10 @@ function App() {
 
   return (
     <>
-      <Preview />
+      {/* <Preview /> */}
       <Header open={() => setCartIsVisible(true)} />
       <Address />
+      <DeliveryModal />
       <Content navigation={NAV_MENU} item={items} isLoading={isLoading} />
       {cartIsVisible && <Modal close={() => setCartIsVisible(false)} />}
       <Footer />
